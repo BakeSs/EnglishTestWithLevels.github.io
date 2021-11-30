@@ -64,6 +64,9 @@ $(document).ready(function(){
     $("button").click(function(){
         if(attempNumber == 0){
             inputText.value = " ";
+			goodPoints.innerHTML = "0";
+			badPoints.innerHTML = "0";
+			attemptLabel.innerHTML = "0/10";
         }
 
         if(inputText.value == ""){
@@ -111,6 +114,8 @@ $(document).ready(function(){
                 else if (goodAns > 7) { level = "CHMNU user"};
                 alert("GAME OVER! You are " + level);
                 attempNumber = 0;
+				$('input[name=mode]').attr("disabled",false);
+				buttonText.innerHTML = "Generate";
             }
       }
     });
