@@ -1,0 +1,81 @@
+html, body{
+    height:99%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.chooses{
+  margin:10px;
+}
+
+.buttonTextShow{
+    margin:2.5% 5px;
+    height: 200px;
+    width: 300px;
+    border: 0px;
+    background: rgba(179, 173, 190, 0.5);
+    border-radius: 2%;
+    font-size:30px;
+    align-self: center;
+}
+
+.textInput{
+  border: 2px solid rgb(139, 176, 211);
+  width: 200px;
+  align-self: center;
+  text-align: center;
+}
+
+p{
+  align-self: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size:large;
+}
+
+.playerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+}
+
+.pointCounter{
+  display: flex;
+  text-align:center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.green{
+  color:green;
+}
+
+.red{
+  color:red;
+}
+
+@media screen and (max-width:600px){
+  .chooses{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textInput{
+    width:250px;
+    height:70px;
+    font-size:40px;
+  }
+  .buttonTextShow{
+    width:275px;
+    height: 100px;
+    font-size:36px;
+  }
+  .pointCounter{
+    font-size:30px;
+  }
+}

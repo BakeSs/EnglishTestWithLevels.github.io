@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна робота №12</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="playerInfo">
+            <button id="buttonText" class="buttonTextShow">Generate</button>
+
+            <div class="chooses">
+                <label for="easyMode">Easy mode</label>
+                <input type="radio" name="mode" id="easyMode">
+                <label for="easyMode">Medium mode</label>
+                <input type="radio" name="mode" id="mediumMode">
+                <label for="easyMode">Hard mode</label>
+                <input type="radio" name="mode" id="hardMode">
+            </div>
+
+            <input type="text" name="inText" id="inText" class="textInput">
+
+            <p id="attempt">0/10</p>
+
+            <div class="pointCounter">
+                <div>
+                    <p class="green">Вірно</p>
+                    <p id="good">0</p>
+                </div>
+                <div>
+                    <p class="red">Невірно</p>
+                    <p id="bad">0</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/script.js">
+    </script>
+</body>
+</html>
