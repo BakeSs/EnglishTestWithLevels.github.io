@@ -109,6 +109,7 @@ $(document).ready(function(){
                 }
                 if(attempNumber == 11){
                 let level;
+                goodAns = parseInt(goodPoints.innerHTML);
                 if(goodAns < 5) { level = "potato" }
                 else if (goodAns > 4 && goodAns < 8){ level = "school boy"}
                 else if (goodAns > 7) { level = "CHMNU user"};
